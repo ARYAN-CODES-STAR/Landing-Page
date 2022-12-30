@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        * {
+            border: none;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            /* background-image: linear-gradient(to right, red , yellow); */
+        }
+
+        body {
+           
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-image: linear-gradient(to right, red , yellow); */
+           
+        }
+
+        .container {
+
+            border-radius: 17px;
+            width: 600px;
+            height: auto;
+            /* border: lightgray solid 1px; */
+            margin-left: 32%;
+            margin-top: 7%;
+
+            box-shadow: 35px 35px 70px #bebebe, -35px -35px 70px #ffff;
+            background-image: linear-gradient(to right, red , yellow);
+
+        }
+
+        input:focus {
+            /* border: 1px solid lightblue !important; */
+            border: none;
+            box-shadow: 1px 1px 5px rgb(172, 205, 218);
+            background-color: rgb(235, 241, 243);
+            outline: solid 1px rgb(172, 205, 218);
+
+        }
+
+        button:hover {
+            /* background-color: rgb(14, 197, 14); */
+            cursor: pointer;
+            transition: all 0.7s;
+            text-shadow: 0 1px 0;
+            /* box-shadow: 10px 20px 1px coral; */
+            /* box-shadow: inset 5px 6px 5px rgb(39, 153, 39); */
+            /* opacity: ; */
+
+        }
+
+        input {
+            width: 290px;
+            height: 40px;
+            /* background-color: lightblue; */
+            border: lightgray solid 1px;
+            border-radius: 3px;
+        }
+
+        button {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 300px;
+            height: 50px;
+            border-radius: 50px;
+            border: none;
+            color: rgb(0, 0, 0);
+            box-shadow:inset 5px 6px 5px rgb(209, 189, 189);
+            /* background-color: rgb(76, 219, 76); */
+        }
+
+        .password {
+            display: flex;
+        }
+
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .main {
+            padding: 13%;
+            padding-top: 3%;
+
+
+        }
+
+        #show {
+            margin-left: 80px;
+            margin-top: 17px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        img{
+        width: 400px;
+        height: auto;
+        position:absolute;
+        box-shadow: 35px 35px 70px #bebebe, -35px -35px 70px #ffff ;
+   
+    }
+    #dob:hover{
+
+        cursor: pointer;
+
+    }
+        #logo {
+            width: 200px;
+            position: absolute;
+            height: auto;
+            margin-top: -120px;
+        }
+    </style>
+</head>
+
+<body>
+    <img id="logo" src="logo.png" alt="">
+   
+    <div class="container" style="z-index: 1;">
+        <div class="main" style="z-index: 2;">
+            <h1
+                style=" color:rgba(0, 0, 0, 0.986) ; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                Registration Form</h1>
+
+            <div class="name">
+                <p><strong>Name <br> </strong> </p>
+                <p><a href="#"></a> </p>
+            </div>
+            <input type="text" placeholder="Enter your Name">
+            <br>
+
+
+            <div class="phoneno">
+                <p><strong>Phone Number <br></strong></p>
+                <p><a href="#"></a></p>
+            </div>
+            <input type="number"placeholder="Enter Phone Number">
+            <br>
+            <p><strong>Email<br></strong></p>
+            <input type="email"action="/action_page.php"placeholder="Enter your Email id">
+
+<!-- 
+            <div class="dob">
+                <p id="dob"><strong>Date Of Birth <br></strong></p>
+                <p><a href="#"></a></p>
+            </div> -->
+            <!-- <input type="date"> -->
+            <br>
+
+            <!--CONTACT DETAILS-->
+
+            <!-- <div class="city">
+                <p><strong>Village/City/Town</strong></p>
+                <a href="#"></a>
+            </div> -->
+            <!-- <input type="text"placeholder="Enter your Village/City/Town"> -->
+            <br>
+
+            <!-- <div class="District">
+                <p><strong>District</strong></p>
+                <a href="#"></a>
+            </div>
+            <input type="text"placeholder="Enter your district"> -->
+            <br>
+
+            <div class="prog_channel">
+                <p><strong>Programming Languages you know</strong></p>
+                <a href="#"></a>
+            </div>
+            <input type="text"placeholder="C++,Java,Python,JavaScript">
+            <br>
+
+            <div class="link">
+                <p><strong>Project Link & Description</strong></p>
+                <a href="#"></a>
+            </div>
+            <input type="text"placeholder="Enter Project Description">
+            <br>
+
+         
+<!-- 
+            <div class="jobtitle">
+                <p><strong>Job Title</strong></p>
+                <a href="#"></a>
+            </div> -->
+            <!-- <input type="text"placeholder="Enter your job title">
+            <br> -->
+
+            <div class="org">
+                <p><strong>Organization Name</strong></p>
+                <a href="#"></a>
+            </div>
+            <input type="text"placeholder="Enter the name of your organization">
+            <br>
+
+            <br>
+
+            <br><br>
+
+            
+            <button>Sign Up</button>
+        </div>
+    </div>
+</body>
+
+</html>
